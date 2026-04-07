@@ -14,15 +14,6 @@ function generatePassword(length = 15) {
     return password;
 }
 
-const lengthSlider = document.getElementById("length");
-const lengthValue = document.getElementById("lengthValue");
-lengthValue.textContent = lengthSlider.value;
-
-lengthSlider.addEventListener("input", () => {
-    lengthValue.textContent = lengthSlider.value;
-});
-
-
 function generatePasswords() {
     const lengthInput = parseInt(document.getElementById("length").value) || 15;
     let password1 = generatePassword(lengthInput);
