@@ -14,8 +14,8 @@
 
     <div class="options">
         <label>
-            Length:
-            <input type="number" id="length" value="8" min="8" max="15">
+            Length: <span id="lengthValue">12</span>
+            <input type="range" id="length" min="8" max="15" value="12">
         </label>
 
         <div class="horizontal-row">
@@ -38,9 +38,18 @@
 
     <div class="divider"></div>
 
-    <div class="passwords">
+<div class="passwords">
+    <div>
         <div id="password1" class="password-box"></div>
+        <div class="strength-bar">
+            <div id="strength-fill1" class="strength-fill"></div>
+        </div>
+    </div>
+    <div>
         <div id="password2" class="password-box"></div>
+        <div class="strength-bar">
+            <div id="strength-fill2" class="strength-fill"></div>
+        </div>
     </div>
 </div>
 
