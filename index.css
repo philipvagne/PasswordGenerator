@@ -69,24 +69,6 @@ button {
     color: white;
 }
 
-.password-box::after {
-    content: "✔";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    font-size: 18px;
-    color: #10B981;
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.password-box.copied::after {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 1;
-}
-
 .password-box::before {
     content: "Click to copy";
     position: absolute;
@@ -99,14 +81,21 @@ button {
     padding: 3px 8px;
     border-radius: 5px;
     opacity: 0;
-    pointer-events: none;
     white-space: nowrap;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     transition: opacity 0.2s ease-in-out;
-    font-weight: bold;
 }
 
 .password-box:hover::before {
     opacity: 1;
+}
+
+.password-box.copied::before {
+    content: "Click to copy ✔";
+    color: #4ADF86;
 }
 
 .options {
@@ -125,6 +114,7 @@ button {
     gap: 5px;
     font-size: 14px;
     color: #D3D3D3;
+    font-weight: bold;
 }
 
 .options input[type="number"] {
