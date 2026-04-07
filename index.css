@@ -1,5 +1,5 @@
 body {
-    background-color: #1F2937;
+    background-color: #111827;
     font-family: Arial, sans-serif;
     color: white;
     display: flex;
@@ -11,12 +11,17 @@ body {
 
 .container {
     text-align: left;
-    max-width: 500px;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #1F2937;
+    border: 3px solid #1F2937;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 .highlight {
@@ -25,63 +30,68 @@ h1 {
 
 p {
     color: #979dac;
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 button {
     background-color: #10B981;
     border: none;
-    padding: 14px 28px;
+    padding: 18px 36px;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 .divider {
-    margin: 25px 0;
+    margin: 30px 0;
     border-top: 1px solid #2F3E53;
 }
 
 .passwords {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .password-box {
     position: relative;
     background-color: #273549;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 12px;
     color: #4ADF86;
-    width: 180px;
+    width: 200px;
     text-align: center;
     word-break: break-all;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .password-box:hover {
     background-color: #10B981;
-    transform: scale(1.08);
+    transform: scale(1.1);
     color: white;
 }
 
 .password-box::before {
     content: "Click to copy";
     position: absolute;
-    top: -30px;
+    top: -35px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #1E2A3A;
     color: #D3D3D3;
-    font-size: 14px;
-    padding: 4px 10px;
-    border-radius: 5px;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 6px;
     opacity: 0;
     white-space: nowrap;
     pointer-events: none;
@@ -101,35 +111,35 @@ button {
 }
 
 .options {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     background-color: #1E2A3A;
-    padding: 18px;
-    border-radius: 10px;
+    padding: 22px;
+    border-radius: 12px;
 }
 
 .options label {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 16px;
+    gap: 10px;
+    font-size: 18px;
     color: #D3D3D3;
     font-weight: bold;
 }
 
 .options input[type="number"] {
-    width: 70px;
-    padding: 6px;
-    border-radius: 6px;
+    width: 80px;
+    padding: 8px;
+    border-radius: 8px;
     border: none;
     background-color: #273549;
     color: #4ADF86;
     font-weight: bold;
     text-align: center;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.2s ease;
 }
 
@@ -138,21 +148,21 @@ button {
 }
 
 .options input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     accent-color: #10B981;
     cursor: pointer;
 }
 
 .horizontal-row {
     display: flex;
-    gap: 25px;
-    margin-top: 6px;
+    gap: 30px;
+    margin-top: 8px;
 }
 
 .horizontal-row label {
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 16px;
+    gap: 8px;
+    font-size: 18px;
 }
